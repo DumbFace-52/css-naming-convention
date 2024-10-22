@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* || RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* colors */
+  --BGCOLOR: papayawhip;
+  --HEADER-BGCOLOR: chocolate;
+  --HEADER-COLOR: ivory;
+}
+
+/* || UTILITY CLASSES */
+
+.underline {
+  text-decoration: underline;
+}
+
+/* || GENERAL STYLES */
+
+html {
+  font-family: 'Bubblegum Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+body {
+  background-color: var(--BGCOLOR);
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+/* || BLOCKS */
+/* aka components */
+
+.header {
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.5rem;
+}
+
+/* || ELEMENTS */
+/* No standalone meaning - semantically tied to the block */
+/* does not represent structure, not header__nav__btn */
+
+.header__btn {
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+/* || MODIFIERS */
+/* incremental style changes */
+
+.header__btn--secondary {
+  background-color: dodgerblue;
+}
+
+.header__btn--lean {
+  transform: skewX(-10deg);
+}
+
+.header__btn--border-lg {
+  border: 5px solid white;
+}
